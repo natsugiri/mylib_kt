@@ -13,7 +13,7 @@ class Fenwick(val n: Int) {
         var r = r_
         var ret = 0L
         while (r > 0) {
-        ret += a[r - 1]
+            ret += a[r - 1]
             r = r and (r - 1)
         }
         return ret

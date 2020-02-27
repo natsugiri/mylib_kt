@@ -26,6 +26,8 @@ class Rmq(val n: Int) {
         while (l < r) {
             if ((l and 1) == 1) { ret = minOf(ret, a[l]); l++; }
             if ((r and 1) == 1) { r--; ret = minOf(ret, a[r]); }
+            l /= 2
+            r /= 2
         }
         return ret
     }
